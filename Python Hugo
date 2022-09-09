@@ -16,3 +16,9 @@ display(trans_orgaosup3)
 
 trans_orgaosup4 = df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Ministério da Agricultura, Pecuária e Abastec',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
 display(trans_orgaosup4)
+
+trans_orgaosup5 = df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Ministério da Ciência, Tecnologia, Inovações ',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
+display(trans_orgaosup5)
+
+trans_orgaosup6 = df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Ministério da Defesa',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
+display(trans_orgaosup6)
