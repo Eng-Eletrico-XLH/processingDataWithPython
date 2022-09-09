@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+
+df = pd.read_csv('C:/Users/chavi/Downloads/202201_CPGF.csv', encoding="latin-1", sep=';')
+
+# Relatório de Transações por ORGÃO SUPERIOR
+
+trans_orgaosup1 = df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Advocacia-Geral da União',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
+display(trans_orgaosup1)
+
+trans_orgaosup2= df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Banco Central do Brasil - Orçamento Fiscal e ',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
+display(trans_orgaosup2)
+
+trans_orgaosup3 = df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Controladoria-Geral da União',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
+display(trans_orgaosup3)
+
+trans_orgaosup4 = df.loc[df['NOME ÓRGÃO SUPERIOR'] == 'Ministério da Agricultura, Pecuária e Abastec',['CÓDIGO UNIDADE GESTORA', 'NOME UNIDADE GESTORA']]
+display(trans_orgaosup4)
